@@ -1,0 +1,208 @@
+3.$ git clone https://github.com/Fisnik23/SI_2022_lab1_161206
+
+4.cd SI_2022_lab1_161206/
+
+5.$ nano shopping_list.txt
+
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (master)
+$ git add shopping_list.txt
+
+$ git commit -m "Add 5 items to the shopping list"
+[master a8d79ed] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+6. $ nano shopping_list.txt
+
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (master)
+$ git add shopping_list.txt
+warning: LF will be replaced by CRLF in shopping_list.txt.
+The file will have its original line endings in your working directory
+
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (master)
+$ git commit -m "Add quantities to the items"
+[master e6d8ceb] Add quantities to the items
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+7. $ git branch branch1
+
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (master)
+$ git branch branch2
+
+.$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 641 bytes | 641.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Fisnik23/SI_2022_lab1_161206
+   2a774b1..e6d8ceb  master -> master
+branch 'master' set up to track 'origin/master'.
+gi
+
+$ git checkout branch1
+Switched to branch 'branch1'
+
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (branch1)
+$ git push -u origin branch1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/Fisnik23/SI_2022_lab1_161206/pull/new/branch1
+remote:
+To https://github.com/Fisnik23/SI_2022_lab1_161206
+ * [new branch]      branch1 -> branch1
+branch 'branch1' set up to track 'origin/branch1'.
+
+8.
+$ git log
+commit e6d8cebdd38f36db74b8cfa8e2fe600f455b778a (HEAD -> branch2, origin/master, origin/branch2, origin/branch1, origin/HEAD, master, branch1)
+Author: Fisnik <fisnik23sulimani@Outlook.com>
+Date:   Sun Apr 10 22:01:14 2022 +0200
+
+    Add quantities to the items
+
+commit a8d79ed10879790e74065ec19d03aed429580ff5
+Author: Fisnik <fisnik23sulimani@Outlook.com>
+Date:   Sun Apr 10 22:00:31 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 2a774b19e5a8b495ead0ca5c4735598691d73103
+Author: Fisnik23 <37669131+Fisnik23@users.noreply.github.com>
+Date:   Sun Apr 10 21:58:11 2022 +0200
+
+    Initial commit
+
+
+9.38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (branch2)
+$ git push -u origin branch2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/Fisnik23/SI_2022_lab1_161206/pull/new/branch2
+remote:
+To https://github.com/Fisnik23/SI_2022_lab1_161206
+ * [new branch]      branch2 -> branch2
+branch 'branch2' set up to track 'origin/branch2'.
+
+10. $ git checkout branch1
+Switched to branch 'branch1'
+Your branch is up to date with 'origin/branch1'.
+
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (branch1)
+$ nano shopping_list.txt
+
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (branch1)
+$ git add shopping_list.txt
+warning: LF will be replaced by CRLF in shopping_list.txt.
+The file will have its original line endings in your working directory
+
+11.$ git commit -m "Change quantity of item #5"
+[branch1 9fbad56] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+12.
+
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+13. 
+$ git commit -m "Change quantity of item #2"
+[master eb726e5] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14. $ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Fisnik23/SI_2022_lab1_161206
+   e6d8ceb..eb726e5  master -> master
+branch 'master' set up to track 'origin/master'.
+
+15. $ git checkout branch2
+Switched to branch 'branch2'
+Your branch is up to date with 'origin/branch2'.
+16. $ git commit -m "Modify item #4"
+[branch2 5f7daa7] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+17.
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (branch2)
+$ git log
+commit 5f7daa7c1a9d3fcd41d9ffb29dd62807ecbb67b7 (HEAD -> branch2)
+Author: Fisnik <fisnik23sulimani@Outlook.com>
+Date:   Sun Apr 10 22:05:48 2022 +0200
+
+    Modify item #4
+
+commit e6d8cebdd38f36db74b8cfa8e2fe600f455b778a (origin/branch2)
+Author: Fisnik <fisnik23sulimani@Outlook.com>
+Date:   Sun Apr 10 22:01:14 2022 +0200
+
+    Add quantities to the items
+
+commit a8d79ed10879790e74065ec19d03aed429580ff5
+Author: Fisnik <fisnik23sulimani@Outlook.com>
+Date:   Sun Apr 10 22:00:31 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 2a774b19e5a8b495ead0ca5c4735598691d73103
+Author: Fisnik23 <37669131+Fisnik23@users.noreply.github.com>
+Date:   Sun Apr 10 21:58:11 2022 +0200
+
+    Initial commit
+
+18. $ git commit --amend -m "Modify item #4 and add item #6"
+[branch2 307024d] Modify item #4 and add item #6
+ Date: Sun Apr 10 22:05:48 2022 +0200
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+19.
+$ git log
+commit 307024dfc1f479e25b08023cba66dd235f9831f7 (HEAD -> branch2)
+Author: Fisnik <fisnik23sulimani@Outlook.com>
+Date:   Sun Apr 10 22:05:48 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit e6d8cebdd38f36db74b8cfa8e2fe600f455b778a (origin/branch2)
+Author: Fisnik <fisnik23sulimani@Outlook.com>
+Date:   Sun Apr 10 22:01:14 2022 +0200
+
+    Add quantities to the items
+
+commit a8d79ed10879790e74065ec19d03aed429580ff5
+Author: Fisnik <fisnik23sulimani@Outlook.com>
+Date:   Sun Apr 10 22:00:31 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 2a774b19e5a8b495ead0ca5c4735598691d73103
+Author: Fisnik23 <37669131+Fisnik23@users.noreply.github.com>
+Date:   Sun Apr 10 21:58:11 2022 +0200
+
+    Initial commit
+
+20. $ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+38970@NITRO5 MINGW64 ~/Desktop/SI_2022_lab1_161206 (master)
+$ git merge branch1
+Auto-merging shopping_list.txt
+Merge made by the 'ort' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+21. $ git commit -a -m "Merge branch 'branch2'"
+[master d1d53c2] Merge branch 'branch2'
+
