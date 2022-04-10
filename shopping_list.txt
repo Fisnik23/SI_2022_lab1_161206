@@ -1,5 +1,6 @@
 Ball x 1
 Shoes x 1
 TV x 1
-Trainers x 2
+XBOX x 2
 Dress x 3
+Playstation x 1
