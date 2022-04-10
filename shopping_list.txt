@@ -1,5 +1,5 @@
 Ball x 1
-Shoes x 1
+Shoes x 2
 TV x 1
 Trainers x 2
 Dress x 3
